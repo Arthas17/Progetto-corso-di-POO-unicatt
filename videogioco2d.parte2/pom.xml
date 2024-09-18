@@ -1,0 +1,99 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.videogioco2d.parte2</groupId>
+  <artifactId>videogioco2d.parte2</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>Videogioco2D_parte2</name>
+  
+  <properties>
+        <gdx.version>1.9.13</gdx.version>
+        <java.version>11</java.version>
+    </properties>
+
+ <dependencies>
+        <dependency>
+            <groupId>com.badlogicgames.gdx</groupId>
+            <artifactId>gdx-box2d-platform</artifactId>
+            <classifier>natives-desktop</classifier>
+            <version>${gdx.version}</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.badlogicgames.gdx</groupId>
+            <artifactId>gdx-platform</artifactId>
+            <classifier>natives-desktop</classifier>
+            <version>1.12.1</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.badlogicgames.gdx</groupId>
+            <artifactId>gdx</artifactId>
+            <version>1.12.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.badlogicgames.gdx</groupId>
+            <artifactId>gdx-backend-lwjgl3</artifactId>
+            <version>1.12.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.badlogicgames.gdx</groupId>
+            <artifactId>gdx-box2d-platform</artifactId>
+            <version>${gdx.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.badlogicgames.box2dlights</groupId>
+            <artifactId>box2dlights</artifactId>
+            <version>1.5</version>
+        </dependency>
+        <dependency>
+            <groupId>com.badlogicgames.gdx</groupId>
+            <artifactId>gdx-openal</artifactId>
+            <version>0.9.9</version>
+        </dependency>
+        
+    </dependencies>
+    
+    
+    <build>
+		
+	
+		<resources>
+		<resource>
+			<directory>src/main/resources</directory>
+			<includes>
+				<include>*.png</include></includes>
+		</resource>
+		
+		<resource>
+			<directory>src/main/java</directory>
+		</resource>
+	
+		
+		<resource>
+			<directory>src/main/resources/resources2</directory>
+			<includes>
+				<include>*.png</include>
+				<include>*.tsx</include>
+				<include>*.tmx</include>
+				</includes>
+				
+		</resource>
+		
+		<resource>
+			<directory>src/main/resources/skin</directory>
+			<includes>
+				<include>*.json</include>
+				<include>*.atlas</include>
+				<include>*.fnt</include>
+				<include>*.png</include>
+				
+				
+				</includes>
+		</resource>
+	</resources>
+	
+	</build>
+  
+
+ 
+</project>
